@@ -42,7 +42,7 @@ module.exports = {
     // filename: "bundle.js",
     // publicPath: "/",
     publicPath: "/",
-    path: path.join(__dirname, "public"),
+    path: path.join(__dirname, "./dist"),
     filename: "bundle-[hash].js",
   },
   plugins: [
