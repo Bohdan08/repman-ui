@@ -38,9 +38,12 @@ module.exports = {
     extensions: ["*", ".js", ".jsx"],
   },
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js",
+    // path: path.resolve(__dirname, "./dist"),
+    // filename: "bundle.js",
+    // publicPath: "/",
     publicPath: "/",
+    path: path.join(__dirname, "public"),
+    filename: "bundle-[hash].js",
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -56,6 +59,15 @@ module.exports = {
     // historyApiFallback: {
     //   index: "index.html",
     // },
+    historyApiFallback: true,
+    // stack overflow
+
+    https: true,
+    port: 123,
+    hot: true,
+    contentBase: "./public",
+    inline: true,
+    disableHostCheck: true,
     historyApiFallback: true,
   },
 };
