@@ -52,6 +52,8 @@ module.exports = {
     port: process.env.PORT || 3000,
     contentBase: path.resolve(__dirname, "./dist"),
     hot: true,
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: "index.html",
+    },
   },
 };
