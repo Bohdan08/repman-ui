@@ -49,11 +49,14 @@ module.exports = {
     }),
   ],
   devServer: {
-    port: process.env.PORT || 3000,
-    contentBase: path.resolve(__dirname, "./dist"),
-    hot: true,
+    // port: process.env.PORT || 3000,
+    // contentBase: path.resolve(__dirname, "./dist"),
+    // hot: true,
+    // historyApiFallback: {
+    //   index: "index.html",
+    // },
     historyApiFallback: {
-      index: "index.html",
+      index: path.resolve(__dirname, "public/index.html"),
     },
   },
 };
