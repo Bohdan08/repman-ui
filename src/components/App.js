@@ -9,7 +9,7 @@ import "../styles/index.scss";
 const App = () => {
   return (
     <>
-      <p> hi6</p>
+      <p> hi7</p>
       <Router>
         <Switch>
           {/* <Route exact path="/:" component={Wrapper} />
