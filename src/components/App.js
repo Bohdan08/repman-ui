@@ -8,17 +8,14 @@ import "../styles/index.scss";
 
 const App = () => {
   return (
-    <>
-      <p> hi7</p>
-      <Router>
-        <Switch>
-          {/* <Route exact path="/:" component={Wrapper} />
+    <Router>
+      <Switch>
+        {/* <Route exact path="/:" component={Wrapper} />
         <Route path="/*" component={Wrapper} /> */}
 
-          <Route component={Wrapper} />
-        </Switch>
-      </Router>
-    </>
+        <Route component={Wrapper} />
+      </Switch>
+    </Router>
   );
 };
 
