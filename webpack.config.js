@@ -40,6 +40,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js",
+    publicPath: "/",
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -55,8 +56,6 @@ module.exports = {
     // historyApiFallback: {
     //   index: "index.html",
     // },
-    historyApiFallback: {
-      index: path.resolve(__dirname, "public/index.html"),
-    },
+    historyApiFallback: true,
   },
 };
